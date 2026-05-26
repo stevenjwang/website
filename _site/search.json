@@ -1,68 +1,5 @@
 [
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
-    "section": "",
-    "text": "Computational Structures in Data Science, Concepts of Computing with Data, Linear Algebra and Differential Equations, Concepts of Probability, Discrete Mathematics, Multivariable Calculus [Signals, Dynamical Systems, and Information Processing; Financial Accounting]"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "A Little About Me",
-    "section": "",
-    "text": "Thanks for coming by! I’m a Bay Area native currently studying Applied Mathematics and Data Science at UC Berkeley.\nI enjoy working out (on a push/pull/legs split), hooping, computers (hardware/architecture), cars/motorsport (I’m a Vehicle Dynamics engineer for Berkeley Formula Racing), and EDM (I was a top 350 Spotify listener of William Black worldwide in 2025). I’m also pretty proud of my general knowledge base, which I’m constantly adding to."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Hi! I’m Steven Wang. I’m a UC Berkeley undergrad studying Applied Mathematics and Data Science. WIP–poke around!"
-  },
-  {
-    "objectID": "resume.html#coursework",
-    "href": "resume.html#coursework",
-    "title": "Resume",
-    "section": "",
-    "text": "Computational Structures in Data Science, Concepts of Computing with Data, Linear Algebra and Differential Equations, Concepts of Probability, Discrete Mathematics, Multivariable Calculus [Signals, Dynamical Systems, and Information Processing; Financial Accounting]"
-  },
-  {
-    "objectID": "resume.html#experience",
-    "href": "resume.html#experience",
-    "title": "Resume",
-    "section": "Experience:",
-    "text": "Experience:\n[fill]"
-  },
-  {
-    "objectID": "resume.html#projectsachievements",
-    "href": "resume.html#projectsachievements",
-    "title": "Resume",
-    "section": "Projects/Achievements:",
-    "text": "Projects/Achievements:\n[github again/ocf?; michigan pending]"
-  },
-  {
-    "objectID": "resume.html#skills",
-    "href": "resume.html#skills",
-    "title": "Resume",
-    "section": "Skills:",
-    "text": "Skills:\nProgramming Languages: Python, SQL/SQLite, R, Java, MATLAB, HTML/CSS, Unix Shell Data Analysis Workflow: NumPy, tidyverse, shiny, Signal Processing, Predictive Modeling, Sensitivity Analysis, Jupyter, Quarto, GitHub\nSystems: Technical Support, Jamf MDM, DNS, Android/Windows/iOS/macOS Administration\nProductivity & Web: Web Development, WordPress, SEO, Google Search Console, Google Workspace, Microsoft 365\nArchitecture: Hardware Architecture, UI/UX\nAutomotive & Race Car Engineering: Vehicle Dynamics, Race Car Setup and Engineering, Suspension Design and Tuning, Auto Maintenance and Repair, WinGeo 3.0, VSusp, Simulator Racing, Performance Driving\nAccounting & Finance: Accounting, GAAP, Financial Statement Analysis"
-  },
-  {
-    "objectID": "project3/project3.html",
-    "href": "project3/project3.html",
-    "title": "2024-25 NBA Salary Data",
-    "section": "",
-    "text": "Salary Distribution and Statistics\n\n\n\n\n10 Highest Salaries\n\n\n\n\nAmong star players, we see multiple contracts paying $49.2M in 2024-25 as a result of the salary cap and the max contract value being limited to 35% of the cap for players with 10+ years of experience.\n\n\n\n\nlook at curry man so inspirational\n\n\n\n\n10 Highest Team Payrolls\n\n\n\n\nBradley Beal is singlehandedly responsible for the Suns payroll. Book and KD have always earned their share; Beal pulled off one of the greatest contract heists of the decade.\n\n\n\n\nSalary vs Experience\n\n\n\n\nWe see a clear salary limit in the first four years of careers. First-round picks are limited to fixed-scale 4-year rookie contracts, while later picks are typically only offered contracts at or near the minimum.\n\n\n\n\nThese restrictions are substantially lifted after the rookie contract expires, or from the 4th year onward, in the case of rookie-scale extensions.\n\n\n\n\nSalary Market by Position\n\n\n\n\nTeams tend to value great point guards more than great players in other positions, like steph.\n\n\n\n\nLook at bron at the top of the sf market.\n\n\n\n\ngo dubs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMin\nQ1\nMedian\nMean\nQ3\nMax\n\n\n\n\n11997\n2087519\n5000000\n10560539\n13209705\n55761216\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nplayer\nteam\nposition\nsalary\n\n\n\n\nStephen Curry\nGSW\nPG\n55761216\n\n\nJoel Embiid\nPHI\nC\n51415938\n\n\nNikola JokiÄ\nDEN\nC\n51415938\n\n\nKevin Durant\nPHO\nPF\n51179021\n\n\nBradley Beal\nPHO\nSG\n50203930\n\n\nJaylen Brown\nBOS\nSF\n49205800\n\n\nKarl-Anthony Towns\nNYK\nC\n49205800\n\n\nPaul George\nPHI\nPF\n49205800\n\n\nKawhi Leonard\nLAC\nSF\n49205800\n\n\nDevin Booker\nPHO\nSG\n49205800\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nplayer\nteam\nposition\nsalary\n\n\n\n\nStephen Curry\nGSW\nPG\n55761216\n\n\nJoel Embiid\nPHI\nC\n51415938\n\n\nNikola JokiÄ\nDEN\nC\n51415938\n\n\nKevin Durant\nPHO\nPF\n51179021\n\n\nBradley Beal\nPHO\nSG\n50203930\n\n\nJaylen Brown\nBOS\nSF\n49205800\n\n\nKarl-Anthony Towns\nNYK\nC\n49205800\n\n\nPaul George\nPHI\nPF\n49205800\n\n\nKawhi Leonard\nLAC\nSF\n49205800\n\n\nDevin Booker\nPHO\nSG\n49205800\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nplayer\nteam\nposition\nsalary\n\n\n\n\nStephen Curry\nGSW\nPG\n55761216\n\n\nJoel Embiid\nPHI\nC\n51415938\n\n\nNikola JokiÄ\nDEN\nC\n51415938\n\n\nKevin Durant\nPHO\nPF\n51179021\n\n\nBradley Beal\nPHO\nSG\n50203930\n\n\nJaylen Brown\nBOS\nSF\n49205800\n\n\nKarl-Anthony Towns\nNYK\nC\n49205800\n\n\nPaul George\nPHI\nPF\n49205800\n\n\nKawhi Leonard\nLAC\nSF\n49205800\n\n\nDevin Booker\nPHO\nSG\n49205800"
-  },
-  {
-    "objectID": "project3/closeread-template.html",
-    "href": "project3/closeread-template.html",
-    "title": "Closeread Template",
-    "section": "",
-    "text": "This is a sample closeread document. @cr-iris\nThe narrative appears on this side bar (left margin).\nThe image on the right depicts three species of iris flowers and their corresponding Sepal and Petal elements.\n\n\n\nWe refer to this image element as a sticky element. Why? Because as you scroll down, the image of the iris flowers gets stuck in the same place.\nWhen you trigger a sticky element, it will be displayed in the main section (to the right of this sidebar).\nHere’s another sticky element. It’s a simple scatter plot based on the iris data set, which is a built-in data frame in R. @cr-plot1\n\n\nggplot(data = iris, \n       aes(x = Sepal.Length, y = Petal.Length, color = Species)) +\n  geom_point() +\n  theme_bw() +\n  labs(title = \"Iris flowers\",\n       x = \"Sepal Length\", \n       y = \"Petal Length\")\n\n\n\n\n\n\n\n\n\nThis narrative section is displayed as a continuous piece of text instead of being broken down into separated paragraphs.\n\nThere are 3 species of iris flowers:\n\n- Setosa (red)\n- Versicolor (green)\n- Virginica (blue)\nHere’s a third sticky element. @cr-table1\n\n\niris |&gt;\n  group_by(Species) |&gt; \n  summarize(avg_sepal_length = mean(Sepal.Length),\n            sd_sepal_length = sd(Sepal.Length)) |&gt; \n  knitr::kable(format = \"html\")\n\n\n\n\nSpecies\navg_sepal_length\nsd_sepal_length\n\n\n\n\nsetosa\n5.006\n0.3524897\n\n\nversicolor\n5.936\n0.5161711\n\n\nvirginica\n6.588\n0.6358796\n\n\n\n\n\n\nIt’s just a table with summary statistics.\nAnd finally a fourth sticky element. @cr-plot2\n\n\nggplot(data = iris, \n       aes(x = Sepal.Length, fill = Species)) +\n  geom_histogram(bins = 20, color = \"white\") +\n  facet_wrap(~ Species) +\n  theme_bw() +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\n\nA colorful plot using facets to show the distribution of Sepal Length among the three iris species."
-  },
-  {
     "objectID": "ps10/ps10-steven-wang.html",
     "href": "ps10/ps10-steven-wang.html",
     "title": "PS10: Geospatial Data",
@@ -110,5 +47,33 @@
     "title": "PS10: Geospatial Data",
     "section": "2.4 Interactive maps with ggiraph",
     "text": "2.4 Interactive maps with ggiraph\nWe can make the map interactive by using functions from \"ggiraph\". In this case, the function geom_sf_interactive() allows us to display a tooltip feature when we hover over a particular state.\n\n2.4.1 Basic Interactive Plot\nReplace geom_sf() with geom_sf_interactive and add the mapping tooltip = party. Give this plot to the girafe function to make the interactive plot.\n\ngirafe(us_states |&gt; ggplot() + geom_sf_interactive(aes(fill = party, tooltip=party)) + scale_fill_manual(values = c(\"#0077cc\", \"#cc2200\")) + geom_sf_text(aes(label = abbr), size = 2, color = \"white\") + theme_void())\n\n\n\n\n\n\n\n2.4.2 Final Interactive Plot\nIt would be better to have a more informative message displayed by the tooltip, for instance, to be able to display the name of the state, as well as the proportion of votes for each party. This requires more data manipulation so that we know the proportion of votes that each party obtained in each state.\nThe following pipeline gives us such a table:\n\nstate_by_party_prop = pres_results |&gt; \n  filter(year == 2020) |&gt; \n  group_by(state_po, party) |&gt;\n  summarize(votes = sum(candidatevotes)) |&gt; \n  mutate(prop = round(100 * votes / sum(votes), 2)) |&gt; \n  filter(party %in% c(\"DEMOCRAT\", \"REPUBLICAN\")) |&gt; \n  select(state_po, party, prop) |&gt;\n  pivot_wider(names_from = party, values_from = prop) |&gt; \n  mutate(winner = ifelse(DEMOCRAT - REPUBLICAN &gt; 0, \"DEM\", \"REP\"))\n\n`summarise()` has regrouped the output.\nℹ Summaries were computed grouped by state_po and party.\nℹ Output is grouped by state_po.\nℹ Use `summarise(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarise(.by = c(state_po, party))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.\n\nhead(state_by_party_prop)\n\n# A tibble: 6 × 4\n# Groups:   state_po [6]\n  state_po DEMOCRAT REPUBLICAN winner\n  &lt;chr&gt;       &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt; \n1 AK           43.0       53.1 REP   \n2 AL           36.6       62.0 REP   \n3 AR           34.8       62.4 REP   \n4 AZ           49.4       49.1 DEM   \n5 CA           63.5       34.3 DEM   \n6 CO           55.4       41.9 DEM   \n\n\nAs we’ve done before, the next step involves merging the us_map() geospatial data with the state_by_party_prop information. Use the code from the static plot as a guide and perform an inner_join.\n\nusp &lt;- inner_join(us_map(), state_by_party_prop, by = c(\"abbr\" = \"state_po\"))\n\nWe can remake the interactive plot specifying a tooltip feature that displays the full name of the State from the us_map() data, together with the percentage of votes for both parties. Set a tooltip similarly to the previous part, but now using tooltip = sprintf(\"%s\\nDem: %s%%\\nRep: %s%%\", full, DEMOCRAT, REPUBLICAN).\n\ngirafe(usp |&gt; ggplot() + geom_sf_interactive(aes(fill = winner, tooltip = sprintf(\"%s\\nDem: %s%%\\nRep: %s%%\", full, DEMOCRAT, REPUBLICAN))) + scale_fill_manual(values = c(\"#0077cc\", \"#cc2200\")) + geom_sf_text(aes(label = abbr), size = 2, color = \"white\") + theme_void())"
+  },
+  {
+    "objectID": "project3/closeread-template.html",
+    "href": "project3/closeread-template.html",
+    "title": "Closeread Template",
+    "section": "",
+    "text": "This is a sample closeread document.\n\n\n\n\nThe narrative appears on this side bar (left margin).\n\n\n\n\nThe image on the right depicts three species of iris flowers and their corresponding Sepal and Petal elements.\n\n\n\n\nWe refer to this image element as a sticky element. Why? Because as you scroll down, the image of the iris flowers gets stuck in the same place.\n\n\n\n\nWhen you trigger a sticky element, it will be displayed in the main section (to the right of this sidebar).\n\n\n\n\nHere’s another sticky element. It’s a simple scatter plot based on the iris data set, which is a built-in data frame in R.\n\n\n\n\nThis narrative section is displayed as a continuous piece of text instead of being broken down into separated paragraphs.\n\nThere are 3 species of iris flowers:\n\n- Setosa (red)\n- Versicolor (green)\n- Virginica (blue)\n\n\n\n\nHere’s a third sticky element.\n\n\n\n\nIt’s just a table with summary statistics.\n\n\n\n\nAnd finally a fourth sticky element.\n\n\n\n\nA colorful plot using facets to show the distribution of Sepal Length among the three iris species.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpecies\navg_sepal_length\nsd_sepal_length\n\n\n\n\nsetosa\n5.006\n0.3524897\n\n\nversicolor\n5.936\n0.5161711\n\n\nvirginica\n6.588\n0.6358796"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "A Little About Me",
+    "section": "",
+    "text": "Thanks for coming by! I’m a Bay Area native currently studying Applied Mathematics and Data Science at UC Berkeley.\nI enjoy working out (on a push/pull/legs split), hooping, computers (hardware/architecture), cars/motorsport (I’m a Vehicle Dynamics engineer for Berkeley Formula Racing), and EDM (I was a top 350 Spotify listener of William Black worldwide in 2025). I’m also pretty proud of my general knowledge base, which I’m constantly adding to."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Hi! I’m Steven Wang. I’m a UC Berkeley undergrad studying Applied Mathematics and Data Science. WIP–poke around!"
+  },
+  {
+    "objectID": "project3/project3.html",
+    "href": "project3/project3.html",
+    "title": "2024-25 NBA Salary Data",
+    "section": "",
+    "text": "Salary Distribution and Statistics\n\n\n\n\n10 Highest Salaries\n\n\n\n\nAmong star players, we see multiple contracts paying $49.2M in 2024-25 as a result of the salary cap and the max contract value being limited to 35% of the cap for players with 10+ years of experience.\n\n\n\n\nlook at curry man so inspirational\n\n\n\n\n10 Highest Team Payrolls\n\n\n\n\nBradley Beal is singlehandedly responsible for the Suns payroll. Book and KD have always earned their share; Beal pulled off one of the greatest contract heists of the decade.\n\n\n\n\nSalary vs Experience\n\n\n\n\nWe see a clear salary limit in the first four years of careers. First-round picks are limited to fixed-scale 4-year rookie contracts, while later picks are typically only offered contracts at or near the minimum.\n\n\n\n\nThese restrictions are substantially lifted after the rookie contract expires, or from the 4th year onward, in the case of rookie-scale extensions.\n\n\n\n\nSalary Market by Position\n\n\n\n\nTeams tend to value great point guards more than great players in other positions, like steph.\n\n\n\n\nLook at bron at the top of the sf market.\n\n\n\n\ngo dubs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMin\nQ1\nMedian\nMean\nQ3\nMax\n\n\n\n\n11997\n2087519\n5000000\n10560539\n13209705\n55761216\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nplayer\nteam\nposition\nsalary\n\n\n\n\nStephen Curry\nGSW\nPG\n55761216\n\n\nJoel Embiid\nPHI\nC\n51415938\n\n\nNikola JokiÄ\nDEN\nC\n51415938\n\n\nKevin Durant\nPHO\nPF\n51179021\n\n\nBradley Beal\nPHO\nSG\n50203930\n\n\nJaylen Brown\nBOS\nSF\n49205800\n\n\nKarl-Anthony Towns\nNYK\nC\n49205800\n\n\nPaul George\nPHI\nPF\n49205800\n\n\nKawhi Leonard\nLAC\nSF\n49205800\n\n\nDevin Booker\nPHO\nSG\n49205800\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nplayer\nteam\nposition\nsalary\n\n\n\n\nStephen Curry\nGSW\nPG\n55761216\n\n\nJoel Embiid\nPHI\nC\n51415938\n\n\nNikola JokiÄ\nDEN\nC\n51415938\n\n\nKevin Durant\nPHO\nPF\n51179021\n\n\nBradley Beal\nPHO\nSG\n50203930\n\n\nJaylen Brown\nBOS\nSF\n49205800\n\n\nKarl-Anthony Towns\nNYK\nC\n49205800\n\n\nPaul George\nPHI\nPF\n49205800\n\n\nKawhi Leonard\nLAC\nSF\n49205800\n\n\nDevin Booker\nPHO\nSG\n49205800\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nplayer\nteam\nposition\nsalary\n\n\n\n\nStephen Curry\nGSW\nPG\n55761216\n\n\nJoel Embiid\nPHI\nC\n51415938\n\n\nNikola JokiÄ\nDEN\nC\n51415938\n\n\nKevin Durant\nPHO\nPF\n51179021\n\n\nBradley Beal\nPHO\nSG\n50203930\n\n\nJaylen Brown\nBOS\nSF\n49205800\n\n\nKarl-Anthony Towns\nNYK\nC\n49205800\n\n\nPaul George\nPHI\nPF\n49205800\n\n\nKawhi Leonard\nLAC\nSF\n49205800\n\n\nDevin Booker\nPHO\nSG\n49205800"
   }
 ]
