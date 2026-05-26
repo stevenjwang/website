@@ -1,0 +1,266 @@
+---
+title: "PS10: Geospatial Data"
+subtitle: "STAT 133"
+format:
+  html:
+    theme: 
+      light: spacelab
+      dark: cyborg
+    respect-user-color-scheme: true
+    toc: true
+    number-sections: true
+embed-resources: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+library(tidyverse)
+library(leaflet)
+library(usmap)
+library(ggiraph)
+```
+
+::: {.callout-note icon=false}
+
+## General Instructions
+
+-   Download the template file `ps10.qmd` to answer the questions.
+
+-   Rename `ps10.qmd` to `ps10-first-last.qmd`, where `first` and `last` are your first and last names (e.g. `ps10-gaston-sanchez.qmd`).
+
+-   Download the file `countypres_2000-2020.csv` from bcourses and put it in the same directory as your qmd file. It is present in the description of this assignment and under files/problem-sets/ps10/
+
+-   Run `install.packages('usmap')` in the R _console_. You will need this package for a section of the assignment. __Do not put this in a code cell in the assignment.__
+
+-   Render your qmd file to an HTML file and submit both your qmd and HTML files to the corresponding assignment submission in bCourses.
+
+:::
+
+# Leaflet Map: Long Storms Data
+
+We'll use the `storms` data from `dplyr` that was used in lecture to get practice with leaflet maps as well as with `lubridate` durations. Start by using `head` to recall the structure of the `storms` data.
+
+```{r}
+head(storms)
+```
+
+## Filtering Data
+
+### Combine Date and Time Information
+
+In this dataset, the date and time variables are split into separate columns. Use the `make_datetime()` function inside `mutate` to create a new column that is a single datetime object. (Use `help(make_datetime)` in the R console to learn about this function)
+
+```{r}
+storms = storms |> mutate(datetime = make_datetime(year = year, month = month, day = day, hour = hour))
+```
+
+### Find Long Duration Storms
+
+Now, for our purposes, we're interested in the number of storms that lasted longer than three weeks. 
+
+- `group_by()` the `name` and `year` columns (this is because names for tropical storms are reused on a six-year rotation, so we have to group by the `year` column as well to avoid counting different storms as the same), 
+- then use `summarize()` to get the `first()` and `last()` dates of each storm, 
+- subtract these two dates to get the duration of the storm, 
+- then `filter` to only get storms where the duration is more than 3 weeks. 
+- Save it as a data frame `long_storms`.
+
+```{r}
+long_storms = storms |> group_by(name, year) |> summarize(start = first(datetime), end = last(datetime)) |> mutate(duration = end - start) |> filter(duration > weeks(3))
+head(long_storms)
+```
+
+### Merge Two Tables
+
+Now, use a join function to merge `long_storms` with `storms` so that we have all of the data in `storms` and `long_storms`, but only for the storms that lasted longer than three weeks.
+
+```{r}
+jstorms = storms |> inner_join(long_storms, by = c("name", "year"))
+```
+
+
+## Make Leaflet Maps
+
+### Basic Map
+
+Let's start by making a basic leaflet map by passing the data from the previous part to `leaflet`, then using `addProviderTiles("CartoDB.Positron")` and `addCircleMarkers`. Experiment with the `radius`, `color`, `stroke`, and `fillOpacity` inputs to `addCircleMarkers`.
+
+```{r}
+jstorms |> leaflet() |> addProviderTiles("CartoDB.Positron") |> addCircleMarkers(lat = ~lat, lng = ~long, radius = 0.5, color = "red", fillOpacity = 0.4)
+```
+
+### Map Including Category Level
+
+Change the `radius` from a setting to a mapping of the `category` variable that describes the strength of the storm. In doing so, larger points will match with higher category storms.
+
+```{r}
+jstorms |> leaflet() |> addProviderTiles("CartoDB.Positron") |> addCircleMarkers(lat = ~lat, lng = ~long, radius = ~category*2, color = "red", fillOpacity = 0.4)
+```
+
+### Color By Storms
+
+Create a color pallet and replicate the same plot as before, but now color the points based on the name of the storm. Add a legend as well.
+
+```{r}
+pal <- colorFactor(palette = "Set1", domain=jstorms$name)
+jstorms |> leaflet() |> addProviderTiles("CartoDB.Positron") |> addCircleMarkers(lat = ~lat, lng = ~long, radius = ~category*2, color = ~pal(name), fillOpacity = 0.4) |> addLegend(pal = pal, values = ~name, title = "name")
+```
+
+### Map with Popup
+
+Lastly, copy your code from the previous section and add a `popup` in `addCircleMarkers` that shows the `datetime` of the storm. 
+
+```{r}
+pal <- colorFactor(palette = "Set1", domain=jstorms$name)
+jstorms |> leaflet() |> addProviderTiles("CartoDB.Positron") |> addCircleMarkers(lat = ~lat, lng = ~long, radius = ~category*2, color = ~pal(name), fillOpacity = 0.4, popup = ~paste0("Storm: ", name, "Category: ", category)) |> addLegend(pal = pal, values = ~name, title = "name")
+
+```
+
+
+\
+
+-----
+
+
+# Coropleth Map: US Election Data
+
+The goal of this section of the assignment is to generate a choropleth map to recreate the election results map found here: <https://www.nytimes.com/interactive/2020/11/03/us/elections/results-president.html>. You will need the `countypres_2000-2020.csv` file from bcourses if you haven't downloaded it already. This is where
+
+## Read and Manipulate Data
+
+First, read in the data from `countypres_2000-2020.csv` and assign it to the variable `pres_results`. Then, filter the data using the `year` variable to only get the data for the 2020 election.
+
+```{r}
+pres_results <- read_csv("countypres_2000-2020.csv")
+
+# Filter for just the year 2020
+pres_results_2020 <- pres_results |> filter(year == 2020)
+```
+
+Use `head()` to take a look at the dataset.
+
+```{r}
+head(pres_results_2020)
+```
+
+Currently, the data is presented at the county level, we need to compute the total number of
+votes for each candidate by state, and determine the winner party. 
+
+- Group the data by `state_po` (The state postal code abbreviation: e.g. CA for California) and `party`, 
+- use `summarize()` to `sum` the number of `candidatevotes` of all the counties, 
+- use `slice_max()` to get only the `state_po` and `party` pairings that have the largest vote counts, 
+- then `select()` the `state_po` and `party` columns. 
+- Finally, use vote counts to find the winning party by state instead of by county. Assign this to the variable `state_by_party`.
+
+```{r}
+state_by_party = pres_results_2020 |> group_by(state_po, party) |> summarize(total_votes = sum(candidatevotes)) |> group_by(state_po) |> slice_max(total_votes, n = 1) |> select(state_po, party)
+```
+
+Use `head()` or `slice_head()` to check `state_by_party`.
+
+```{r}
+head(state_by_party)
+```
+
+
+## Merging Data
+
+Before we can use the dataset to make the election results map, we need to merge it with geospatial data from the `usmap` package. We can use an `inner_join()` on the output of `us_map()` and our `state_by_party` tibble.
+
+```{r}
+us_states <- inner_join(us_map(), state_by_party, by = c("abbr" = "state_po"))
+```
+
+## Making Maps
+
+The `us_map()` function gives us a simple feature collection that contains the geospatial data to graph the electoral 
+votes map. To plot this map with `ggplot()` all you have to do is add a `geom_sf()` layer.
+
+
+### Basic Map
+
+Let's start with a basic graph of the choropleth map, plotting the tiles that correspond to each state. pass the `us_states` data to ggplot and add a `geom_sf()` layer
+
+```{r}
+us_states |> ggplot() + geom_sf()
+```
+
+
+### Color by Party
+
+Because the simple features data has been merged with `state_by_party`, we also have the winner `party` of each state. Therefore, we can _map_ this variable to the `fill` aesthetic to color-code the tiles according to party. To make the colors align with the typical colors of the Democratic and Republican parties, add a `scale_fill_manual(values = c("#0077cc", "#cc2200"))` layer as well.
+
+```{r}
+us_states |> ggplot() + geom_sf(aes(fill = party)) + scale_fill_manual(values = c("#0077cc", "#cc2200"))
+```
+
+
+### Label States
+
+Add a `geom_sf_text()` layer with a mapping for `label = abbr`, which is the state name post office abbreviation. (You may want to mess with the `size` and `color` settings inside `geom_sf_text` in order for the labels to look nice on the colored backgrounds.)
+
+```{r}
+us_states |> ggplot() + geom_sf(aes(fill = party)) + scale_fill_manual(values = c("#0077cc", "#cc2200")) + geom_sf_text(aes(label = abbr), size = 2, color = "white")
+```
+
+
+
+### Final Step
+
+Add the `theme_void` layer to leave just the map without the axis or gridlines. (Not required, but you may also want to try and position the legend below the map and remove the title.)
+
+```{r}
+us_states |> ggplot() + geom_sf(aes(fill = party)) + scale_fill_manual(values = c("#0077cc", "#cc2200")) + geom_sf_text(aes(label = abbr), size = 2, color = "white") + theme_void()
+```
+
+
+## Interactive maps with `ggiraph`
+
+We can make the map interactive by using functions from `"ggiraph"`. In this
+case, the function `geom_sf_interactive()` allows us to display a _tooltip_
+feature when we hover over a particular state. 
+
+### Basic Interactive Plot
+
+Replace `geom_sf()` with `geom_sf_interactive` and add the mapping `tooltip = party`. Give this plot to the `girafe` function to make the interactive plot.
+
+```{r}
+girafe(us_states |> ggplot() + geom_sf_interactive(aes(fill = party, tooltip=party)) + scale_fill_manual(values = c("#0077cc", "#cc2200")) + geom_sf_text(aes(label = abbr), size = 2, color = "white") + theme_void())
+```
+
+
+### Final Interactive Plot
+
+It would be better to have a more informative message displayed by the _tooltip_,
+for instance, to be able to display the name of the state, as well as the 
+proportion of votes for each party. This requires more data manipulation so
+that we know the proportion of votes that each party obtained in each state.
+
+The following pipeline gives us such a table:
+
+```{r}
+state_by_party_prop = pres_results |> 
+  filter(year == 2020) |> 
+  group_by(state_po, party) |>
+  summarize(votes = sum(candidatevotes)) |> 
+  mutate(prop = round(100 * votes / sum(votes), 2)) |> 
+  filter(party %in% c("DEMOCRAT", "REPUBLICAN")) |> 
+  select(state_po, party, prop) |>
+  pivot_wider(names_from = party, values_from = prop) |> 
+  mutate(winner = ifelse(DEMOCRAT - REPUBLICAN > 0, "DEM", "REP"))
+
+head(state_by_party_prop)
+```
+
+As we've done before, the next step involves merging the `us_map()` geospatial data with the `state_by_party_prop` information. Use the code from the static plot as a guide and perform an `inner_join`.
+
+```{r}
+usp <- inner_join(us_map(), state_by_party_prop, by = c("abbr" = "state_po"))
+```
+
+We can remake the interactive plot specifying a _tooltip_ feature that
+displays the `full` name of the State from the `us_map()` data, together with the percentage of votes
+for both parties. Set a tooltip similarly to the previous part, but now using `tooltip = sprintf("%s\nDem: %s%%\nRep: %s%%", full, DEMOCRAT, REPUBLICAN)`.
+
+```{r}
+girafe(usp |> ggplot() + geom_sf_interactive(aes(fill = winner, tooltip = sprintf("%s\nDem: %s%%\nRep: %s%%", full, DEMOCRAT, REPUBLICAN))) + scale_fill_manual(values = c("#0077cc", "#cc2200")) + geom_sf_text(aes(label = abbr), size = 2, color = "white") + theme_void())
+```

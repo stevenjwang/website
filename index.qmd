@@ -1,0 +1,18 @@
+---
+title: "Welcome!"
+about:
+    template: trestles
+    # image: [relative path to headshot]
+    links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/stevenjwang
+      target: _blank # opens link in a new browser tab
+    - icon: github
+      text: Github
+      href: https://github.com/stevenjwang
+      target: _blank # opens link in a new browser tab
+---
+---
+
+Hi! I'm Steven Wang. I'm a UC Berkeley undergrad studying Applied Mathematics and Data Science. WIP--poke around!

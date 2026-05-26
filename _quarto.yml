@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "Steven Wang"
+  navbar:
+    background: primary
+    right:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: /projects/dashboard/demo-pub7.html
+        text: Demo 7
+      - href: /project3/project3.html
+        text: Project 3
+      - href: /_site/ps10/ps10-steven-wang.html
+        text: PS10
+
+format:
+  html:
+    theme: 
+      light: spacelab
+      dark: cyborg
+    css: styles.css
+    respect-user-color-scheme: true
+    toc: true

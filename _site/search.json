@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Computational Structures in Data Science, Concepts of Computing with Data, Linear Algebra and Differential Equations, Concepts of Probability, Discrete Mathematics, Multivariable Calculus [Signals, Dynamical Systems, and Information Processing; Financial Accounting]"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "A Little About Me",
+    "section": "",
+    "text": "Thanks for coming by! I’m a Bay Area native currently studying Applied Mathematics and Data Science at UC Berkeley.\nI enjoy working out (on a push/pull/legs split), hooping, computers (hardware/architecture), cars/motorsport (I’m a Vehicle Dynamics engineer for Berkeley Formula Racing), and EDM (I was a top 350 Spotify listener of William Black worldwide in 2025). I’m also pretty proud of my general knowledge base, which I’m constantly adding to."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Hi! I’m Steven Wang. I’m a UC Berkeley undergrad studying Applied Mathematics and Data Science. WIP–poke around!"
+  },
+  {
+    "objectID": "resume.html#coursework",
+    "href": "resume.html#coursework",
+    "title": "Resume",
+    "section": "",
+    "text": "Computational Structures in Data Science, Concepts of Computing with Data, Linear Algebra and Differential Equations, Concepts of Probability, Discrete Mathematics, Multivariable Calculus [Signals, Dynamical Systems, and Information Processing; Financial Accounting]"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Resume",
+    "section": "Experience:",
+    "text": "Experience:\n[fill]"
+  },
+  {
+    "objectID": "resume.html#projectsachievements",
+    "href": "resume.html#projectsachievements",
+    "title": "Resume",
+    "section": "Projects/Achievements:",
+    "text": "Projects/Achievements:\n[github again/ocf?; michigan pending]"
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Resume",
+    "section": "Skills:",
+    "text": "Skills:\nProgramming Languages: Python, SQL/SQLite, R, Java, MATLAB, HTML/CSS, Unix Shell Data Analysis Workflow: NumPy, tidyverse, shiny, Signal Processing, Predictive Modeling, Sensitivity Analysis, Jupyter, Quarto, GitHub\nSystems: Technical Support, Jamf MDM, DNS, Android/Windows/iOS/macOS Administration\nProductivity & Web: Web Development, WordPress, SEO, Google Search Console, Google Workspace, Microsoft 365\nArchitecture: Hardware Architecture, UI/UX\nAutomotive & Race Car Engineering: Vehicle Dynamics, Race Car Setup and Engineering, Suspension Design and Tuning, Auto Maintenance and Repair, WinGeo 3.0, VSusp, Simulator Racing, Performance Driving\nAccounting & Finance: Accounting, GAAP, Financial Statement Analysis"
+  },
+  {
+    "objectID": "project3/project3.html",
+    "href": "project3/project3.html",
+    "title": "2024-25 NBA Salary Data",
+    "section": "",
+    "text": "Salary Distribution and Statistics\n\n\n\n\n10 Highest Salaries\n\n\n\n\nAmong star players, we see multiple contracts paying $49.2M in 2024-25 as a result of the salary cap and the max contract value being limited to 35% of the cap for players with 10+ years of experience.\n\n\n\n\nlook at curry man so inspirational\n\n\n\n\n10 Highest Team Payrolls\n\n\n\n\nBradley Beal is singlehandedly responsible for the Suns payroll. Book and KD have always earned their share; Beal pulled off one of the greatest contract heists of the decade.\n\n\n\n\nSalary vs Experience\n\n\n\n\nWe see a clear salary limit in the first four years of careers. First-round picks are limited to fixed-scale 4-year rookie contracts, while later picks are typically only offered contracts at or near the minimum.\n\n\n\n\nThese restrictions are substantially lifted after the rookie contract expires, or from the 4th year onward, in the case of rookie-scale extensions.\n\n\n\n\nSalary Market by Position\n\n\n\n\nTeams tend to value great point guards more than great players in other positions, like steph.\n\n\n\n\nLook at bron at the top of the sf market.\n\n\n\n\ngo dubs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMin\nQ1\nMedian\nMean\nQ3\nMax\n\n\n\n\n11997\n2087519\n5000000\n10560539\n13209705\n55761216\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nplayer\nteam\nposition\nsalary\n\n\n\n\nStephen Curry\nGSW\nPG\n55761216\n\n\nJoel Embiid\nPHI\nC\n51415938\n\n\nNikola JokiÄ\nDEN\nC\n51415938\n\n\nKevin Durant\nPHO\nPF\n51179021\n\n\nBradley Beal\nPHO\nSG\n50203930\n\n\nJaylen Brown\nBOS\nSF\n49205800\n\n\nKarl-Anthony Towns\nNYK\nC\n49205800\n\n\nPaul George\nPHI\nPF\n49205800\n\n\nKawhi Leonard\nLAC\nSF\n49205800\n\n\nDevin Booker\nPHO\nSG\n49205800\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nplayer\nteam\nposition\nsalary\n\n\n\n\nStephen Curry\nGSW\nPG\n55761216\n\n\nJoel Embiid\nPHI\nC\n51415938\n\n\nNikola JokiÄ\nDEN\nC\n51415938\n\n\nKevin Durant\nPHO\nPF\n51179021\n\n\nBradley Beal\nPHO\nSG\n50203930\n\n\nJaylen Brown\nBOS\nSF\n49205800\n\n\nKarl-Anthony Towns\nNYK\nC\n49205800\n\n\nPaul George\nPHI\nPF\n49205800\n\n\nKawhi Leonard\nLAC\nSF\n49205800\n\n\nDevin Booker\nPHO\nSG\n49205800\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nplayer\nteam\nposition\nsalary\n\n\n\n\nStephen Curry\nGSW\nPG\n55761216\n\n\nJoel Embiid\nPHI\nC\n51415938\n\n\nNikola JokiÄ\nDEN\nC\n51415938\n\n\nKevin Durant\nPHO\nPF\n51179021\n\n\nBradley Beal\nPHO\nSG\n50203930\n\n\nJaylen Brown\nBOS\nSF\n49205800\n\n\nKarl-Anthony Towns\nNYK\nC\n49205800\n\n\nPaul George\nPHI\nPF\n49205800\n\n\nKawhi Leonard\nLAC\nSF\n49205800\n\n\nDevin Booker\nPHO\nSG\n49205800"
+  },
+  {
+    "objectID": "project3/closeread-template.html",
+    "href": "project3/closeread-template.html",
+    "title": "Closeread Template",
+    "section": "",
+    "text": "This is a sample closeread document. @cr-iris\nThe narrative appears on this side bar (left margin).\nThe image on the right depicts three species of iris flowers and their corresponding Sepal and Petal elements.\n\n\n\nWe refer to this image element as a sticky element. Why? Because as you scroll down, the image of the iris flowers gets stuck in the same place.\nWhen you trigger a sticky element, it will be displayed in the main section (to the right of this sidebar).\nHere’s another sticky element. It’s a simple scatter plot based on the iris data set, which is a built-in data frame in R. @cr-plot1\n\n\nggplot(data = iris, \n       aes(x = Sepal.Length, y = Petal.Length, color = Species)) +\n  geom_point() +\n  theme_bw() +\n  labs(title = \"Iris flowers\",\n       x = \"Sepal Length\", \n       y = \"Petal Length\")\n\n\n\n\n\n\n\n\n\nThis narrative section is displayed as a continuous piece of text instead of being broken down into separated paragraphs.\n\nThere are 3 species of iris flowers:\n\n- Setosa (red)\n- Versicolor (green)\n- Virginica (blue)\nHere’s a third sticky element. @cr-table1\n\n\niris |&gt;\n  group_by(Species) |&gt; \n  summarize(avg_sepal_length = mean(Sepal.Length),\n            sd_sepal_length = sd(Sepal.Length)) |&gt; \n  knitr::kable(format = \"html\")\n\n\n\n\nSpecies\navg_sepal_length\nsd_sepal_length\n\n\n\n\nsetosa\n5.006\n0.3524897\n\n\nversicolor\n5.936\n0.5161711\n\n\nvirginica\n6.588\n0.6358796\n\n\n\n\n\n\nIt’s just a table with summary statistics.\nAnd finally a fourth sticky element. @cr-plot2\n\n\nggplot(data = iris, \n       aes(x = Sepal.Length, fill = Species)) +\n  geom_histogram(bins = 20, color = \"white\") +\n  facet_wrap(~ Species) +\n  theme_bw() +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\n\nA colorful plot using facets to show the distribution of Sepal Length among the three iris species."
+  },
+  {
+    "objectID": "ps10/ps10-steven-wang.html",
+    "href": "ps10/ps10-steven-wang.html",
+    "title": "PS10: Geospatial Data",
+    "section": "",
+    "text": "NoteGeneral Instructions\n\n\n\n\nDownload the template file ps10.qmd to answer the questions.\nRename ps10.qmd to ps10-first-last.qmd, where first and last are your first and last names (e.g. ps10-gaston-sanchez.qmd).\nDownload the file countypres_2000-2020.csv from bcourses and put it in the same directory as your qmd file. It is present in the description of this assignment and under files/problem-sets/ps10/\nRun install.packages('usmap') in the R console. You will need this package for a section of the assignment. Do not put this in a code cell in the assignment.\nRender your qmd file to an HTML file and submit both your qmd and HTML files to the corresponding assignment submission in bCourses."
+  },
+  {
+    "objectID": "ps10/ps10-steven-wang.html#filtering-data",
+    "href": "ps10/ps10-steven-wang.html#filtering-data",
+    "title": "PS10: Geospatial Data",
+    "section": "1.1 Filtering Data",
+    "text": "1.1 Filtering Data\n\n1.1.1 Combine Date and Time Information\nIn this dataset, the date and time variables are split into separate columns. Use the make_datetime() function inside mutate to create a new column that is a single datetime object. (Use help(make_datetime) in the R console to learn about this function)\n\nstorms = storms |&gt; mutate(datetime = make_datetime(year = year, month = month, day = day, hour = hour))\n\n\n\n1.1.2 Find Long Duration Storms\nNow, for our purposes, we’re interested in the number of storms that lasted longer than three weeks.\n\ngroup_by() the name and year columns (this is because names for tropical storms are reused on a six-year rotation, so we have to group by the year column as well to avoid counting different storms as the same),\nthen use summarize() to get the first() and last() dates of each storm,\nsubtract these two dates to get the duration of the storm,\nthen filter to only get storms where the duration is more than 3 weeks.\nSave it as a data frame long_storms.\n\n\nlong_storms = storms |&gt; group_by(name, year) |&gt; summarize(start = first(datetime), end = last(datetime)) |&gt; mutate(duration = end - start) |&gt; filter(duration &gt; weeks(3))\n\n`summarise()` has regrouped the output.\nℹ Summaries were computed grouped by name and year.\nℹ Output is grouped by name.\nℹ Use `summarise(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarise(.by = c(name, year))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.\n\nhead(long_storms)\n\n# A tibble: 6 × 5\n# Groups:   name [6]\n  name      year start               end                 duration    \n  &lt;chr&gt;    &lt;dbl&gt; &lt;dttm&gt;              &lt;dttm&gt;              &lt;drtn&gt;      \n1 Alberto   2000 2000-08-03 18:00:00 2000-08-25 06:00:00 1857600 secs\n2 Ivan      2004 2004-09-02 18:00:00 2004-09-24 06:00:00 1857600 secs\n3 Kyle      2002 2002-09-20 18:00:00 2002-10-12 12:00:00 1879200 secs\n4 Leslie    2018 2018-09-22 00:00:00 2018-10-14 00:00:00 1900800 secs\n5 Nadine    2012 2012-09-10 12:00:00 2012-10-04 06:00:00 2052000 secs\n6 Paulette  2020 2020-09-07 00:00:00 2020-09-28 12:00:00 1857600 secs\n\n\n\n\n1.1.3 Merge Two Tables\nNow, use a join function to merge long_storms with storms so that we have all of the data in storms and long_storms, but only for the storms that lasted longer than three weeks.\n\njstorms = storms |&gt; inner_join(long_storms, by = c(\"name\", \"year\"))"
+  },
+  {
+    "objectID": "ps10/ps10-steven-wang.html#make-leaflet-maps",
+    "href": "ps10/ps10-steven-wang.html#make-leaflet-maps",
+    "title": "PS10: Geospatial Data",
+    "section": "1.2 Make Leaflet Maps",
+    "text": "1.2 Make Leaflet Maps\n\n1.2.1 Basic Map\nLet’s start by making a basic leaflet map by passing the data from the previous part to leaflet, then using addProviderTiles(\"CartoDB.Positron\") and addCircleMarkers. Experiment with the radius, color, stroke, and fillOpacity inputs to addCircleMarkers.\n\njstorms |&gt; leaflet() |&gt; addProviderTiles(\"CartoDB.Positron\") |&gt; addCircleMarkers(lat = ~lat, lng = ~long, radius = 0.5, color = \"red\", fillOpacity = 0.4)\n\n\n\n\n\n\n\n1.2.2 Map Including Category Level\nChange the radius from a setting to a mapping of the category variable that describes the strength of the storm. In doing so, larger points will match with higher category storms.\n\njstorms |&gt; leaflet() |&gt; addProviderTiles(\"CartoDB.Positron\") |&gt; addCircleMarkers(lat = ~lat, lng = ~long, radius = ~category*2, color = \"red\", fillOpacity = 0.4)\n\n\n\n\n\n\n\n1.2.3 Color By Storms\nCreate a color pallet and replicate the same plot as before, but now color the points based on the name of the storm. Add a legend as well.\n\npal &lt;- colorFactor(palette = \"Set1\", domain=jstorms$name)\njstorms |&gt; leaflet() |&gt; addProviderTiles(\"CartoDB.Positron\") |&gt; addCircleMarkers(lat = ~lat, lng = ~long, radius = ~category*2, color = ~pal(name), fillOpacity = 0.4) |&gt; addLegend(pal = pal, values = ~name, title = \"name\")\n\n\n\n\n\n\n\n1.2.4 Map with Popup\nLastly, copy your code from the previous section and add a popup in addCircleMarkers that shows the datetime of the storm.\n\npal &lt;- colorFactor(palette = \"Set1\", domain=jstorms$name)\njstorms |&gt; leaflet() |&gt; addProviderTiles(\"CartoDB.Positron\") |&gt; addCircleMarkers(lat = ~lat, lng = ~long, radius = ~category*2, color = ~pal(name), fillOpacity = 0.4, popup = ~paste0(\"Storm: \", name, \"Category: \", category)) |&gt; addLegend(pal = pal, values = ~name, title = \"name\")"
+  },
+  {
+    "objectID": "ps10/ps10-steven-wang.html#read-and-manipulate-data",
+    "href": "ps10/ps10-steven-wang.html#read-and-manipulate-data",
+    "title": "PS10: Geospatial Data",
+    "section": "2.1 Read and Manipulate Data",
+    "text": "2.1 Read and Manipulate Data\nFirst, read in the data from countypres_2000-2020.csv and assign it to the variable pres_results. Then, filter the data using the year variable to only get the data for the 2020 election.\n\npres_results &lt;- read_csv(\"countypres_2000-2020.csv\")\n\nRows: 72617 Columns: 12\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (7): state, state_po, county_name, office, candidate, party, mode\ndbl (5): year, county_fips, candidatevotes, totalvotes, version\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n# Filter for just the year 2020\npres_results_2020 &lt;- pres_results |&gt; filter(year == 2020)\n\nUse head() to take a look at the dataset.\n\nhead(pres_results_2020)\n\n# A tibble: 6 × 12\n   year state   state_po county_name county_fips office       candidate    party\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;             &lt;dbl&gt; &lt;chr&gt;        &lt;chr&gt;        &lt;chr&gt;\n1  2020 ALABAMA AL       AUTAUGA            1001 US PRESIDENT JOSEPH R BI… DEMO…\n2  2020 ALABAMA AL       AUTAUGA            1001 US PRESIDENT OTHER        OTHER\n3  2020 ALABAMA AL       AUTAUGA            1001 US PRESIDENT DONALD J TR… REPU…\n4  2020 ALABAMA AL       BALDWIN            1003 US PRESIDENT JOSEPH R BI… DEMO…\n5  2020 ALABAMA AL       BALDWIN            1003 US PRESIDENT OTHER        OTHER\n6  2020 ALABAMA AL       BALDWIN            1003 US PRESIDENT DONALD J TR… REPU…\n# ℹ 4 more variables: candidatevotes &lt;dbl&gt;, totalvotes &lt;dbl&gt;, version &lt;dbl&gt;,\n#   mode &lt;chr&gt;\n\n\nCurrently, the data is presented at the county level, we need to compute the total number of votes for each candidate by state, and determine the winner party.\n\nGroup the data by state_po (The state postal code abbreviation: e.g. CA for California) and party,\nuse summarize() to sum the number of candidatevotes of all the counties,\nuse slice_max() to get only the state_po and party pairings that have the largest vote counts,\nthen select() the state_po and party columns.\nFinally, use vote counts to find the winning party by state instead of by county. Assign this to the variable state_by_party.\n\n\nstate_by_party = pres_results_2020 |&gt; group_by(state_po, party) |&gt; summarize(total_votes = sum(candidatevotes)) |&gt; group_by(state_po) |&gt; slice_max(total_votes, n = 1) |&gt; select(state_po, party)\n\n`summarise()` has regrouped the output.\nℹ Summaries were computed grouped by state_po and party.\nℹ Output is grouped by state_po.\nℹ Use `summarise(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarise(.by = c(state_po, party))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.\n\n\nUse head() or slice_head() to check state_by_party.\n\nhead(state_by_party)\n\n# A tibble: 6 × 2\n# Groups:   state_po [6]\n  state_po party     \n  &lt;chr&gt;    &lt;chr&gt;     \n1 AK       REPUBLICAN\n2 AL       REPUBLICAN\n3 AR       REPUBLICAN\n4 AZ       DEMOCRAT  \n5 CA       DEMOCRAT  \n6 CO       DEMOCRAT"
+  },
+  {
+    "objectID": "ps10/ps10-steven-wang.html#merging-data",
+    "href": "ps10/ps10-steven-wang.html#merging-data",
+    "title": "PS10: Geospatial Data",
+    "section": "2.2 Merging Data",
+    "text": "2.2 Merging Data\nBefore we can use the dataset to make the election results map, we need to merge it with geospatial data from the usmap package. We can use an inner_join() on the output of us_map() and our state_by_party tibble.\n\nus_states &lt;- inner_join(us_map(), state_by_party, by = c(\"abbr\" = \"state_po\"))"
+  },
+  {
+    "objectID": "ps10/ps10-steven-wang.html#making-maps",
+    "href": "ps10/ps10-steven-wang.html#making-maps",
+    "title": "PS10: Geospatial Data",
+    "section": "2.3 Making Maps",
+    "text": "2.3 Making Maps\nThe us_map() function gives us a simple feature collection that contains the geospatial data to graph the electoral votes map. To plot this map with ggplot() all you have to do is add a geom_sf() layer.\n\n2.3.1 Basic Map\nLet’s start with a basic graph of the choropleth map, plotting the tiles that correspond to each state. pass the us_states data to ggplot and add a geom_sf() layer\n\nus_states |&gt; ggplot() + geom_sf()\n\n\n\n\n\n\n\n\n\n\n2.3.2 Color by Party\nBecause the simple features data has been merged with state_by_party, we also have the winner party of each state. Therefore, we can map this variable to the fill aesthetic to color-code the tiles according to party. To make the colors align with the typical colors of the Democratic and Republican parties, add a scale_fill_manual(values = c(\"#0077cc\", \"#cc2200\")) layer as well.\n\nus_states |&gt; ggplot() + geom_sf(aes(fill = party)) + scale_fill_manual(values = c(\"#0077cc\", \"#cc2200\"))\n\n\n\n\n\n\n\n\n\n\n2.3.3 Label States\nAdd a geom_sf_text() layer with a mapping for label = abbr, which is the state name post office abbreviation. (You may want to mess with the size and color settings inside geom_sf_text in order for the labels to look nice on the colored backgrounds.)\n\nus_states |&gt; ggplot() + geom_sf(aes(fill = party)) + scale_fill_manual(values = c(\"#0077cc\", \"#cc2200\")) + geom_sf_text(aes(label = abbr), size = 2, color = \"white\")\n\n\n\n\n\n\n\n\n\n\n2.3.4 Final Step\nAdd the theme_void layer to leave just the map without the axis or gridlines. (Not required, but you may also want to try and position the legend below the map and remove the title.)\n\nus_states |&gt; ggplot() + geom_sf(aes(fill = party)) + scale_fill_manual(values = c(\"#0077cc\", \"#cc2200\")) + geom_sf_text(aes(label = abbr), size = 2, color = \"white\") + theme_void()"
+  },
+  {
+    "objectID": "ps10/ps10-steven-wang.html#interactive-maps-with-ggiraph",
+    "href": "ps10/ps10-steven-wang.html#interactive-maps-with-ggiraph",
+    "title": "PS10: Geospatial Data",
+    "section": "2.4 Interactive maps with ggiraph",
+    "text": "2.4 Interactive maps with ggiraph\nWe can make the map interactive by using functions from \"ggiraph\". In this case, the function geom_sf_interactive() allows us to display a tooltip feature when we hover over a particular state.\n\n2.4.1 Basic Interactive Plot\nReplace geom_sf() with geom_sf_interactive and add the mapping tooltip = party. Give this plot to the girafe function to make the interactive plot.\n\ngirafe(us_states |&gt; ggplot() + geom_sf_interactive(aes(fill = party, tooltip=party)) + scale_fill_manual(values = c(\"#0077cc\", \"#cc2200\")) + geom_sf_text(aes(label = abbr), size = 2, color = \"white\") + theme_void())\n\n\n\n\n\n\n\n2.4.2 Final Interactive Plot\nIt would be better to have a more informative message displayed by the tooltip, for instance, to be able to display the name of the state, as well as the proportion of votes for each party. This requires more data manipulation so that we know the proportion of votes that each party obtained in each state.\nThe following pipeline gives us such a table:\n\nstate_by_party_prop = pres_results |&gt; \n  filter(year == 2020) |&gt; \n  group_by(state_po, party) |&gt;\n  summarize(votes = sum(candidatevotes)) |&gt; \n  mutate(prop = round(100 * votes / sum(votes), 2)) |&gt; \n  filter(party %in% c(\"DEMOCRAT\", \"REPUBLICAN\")) |&gt; \n  select(state_po, party, prop) |&gt;\n  pivot_wider(names_from = party, values_from = prop) |&gt; \n  mutate(winner = ifelse(DEMOCRAT - REPUBLICAN &gt; 0, \"DEM\", \"REP\"))\n\n`summarise()` has regrouped the output.\nℹ Summaries were computed grouped by state_po and party.\nℹ Output is grouped by state_po.\nℹ Use `summarise(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarise(.by = c(state_po, party))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.\n\nhead(state_by_party_prop)\n\n# A tibble: 6 × 4\n# Groups:   state_po [6]\n  state_po DEMOCRAT REPUBLICAN winner\n  &lt;chr&gt;       &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt; \n1 AK           43.0       53.1 REP   \n2 AL           36.6       62.0 REP   \n3 AR           34.8       62.4 REP   \n4 AZ           49.4       49.1 DEM   \n5 CA           63.5       34.3 DEM   \n6 CO           55.4       41.9 DEM   \n\n\nAs we’ve done before, the next step involves merging the us_map() geospatial data with the state_by_party_prop information. Use the code from the static plot as a guide and perform an inner_join.\n\nusp &lt;- inner_join(us_map(), state_by_party_prop, by = c(\"abbr\" = \"state_po\"))\n\nWe can remake the interactive plot specifying a tooltip feature that displays the full name of the State from the us_map() data, together with the percentage of votes for both parties. Set a tooltip similarly to the previous part, but now using tooltip = sprintf(\"%s\\nDem: %s%%\\nRep: %s%%\", full, DEMOCRAT, REPUBLICAN).\n\ngirafe(usp |&gt; ggplot() + geom_sf_interactive(aes(fill = winner, tooltip = sprintf(\"%s\\nDem: %s%%\\nRep: %s%%\", full, DEMOCRAT, REPUBLICAN))) + scale_fill_manual(values = c(\"#0077cc\", \"#cc2200\")) + geom_sf_text(aes(label = abbr), size = 2, color = \"white\") + theme_void())"
+  }
+]

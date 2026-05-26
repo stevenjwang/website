@@ -1,0 +1,33 @@
+---
+title: "My First Quarto Dashboard"
+format: 
+  dashboard:
+      theme: 
+        light: spacelab
+        dark: cyborg
+respect-user-color-scheme: true
+embed-resources: true
+---
+
+```{r}
+library(tidyverse)
+library(shiny)
+```
+# Displacement, Cylinder Count, and Drive Wheels vs City MPG
+
+## Row
+
+```{r}
+ctydispl = mpg |> ggplot(aes(x = displ, y=cty, alpha=0.3)) + geom_jitter() + labs(x="Engine Size", y="City MPG")
+ctydispl
+```
+
+```{r}
+ctycyl = mpg |> ggplot(aes(x = factor(cyl), y=cty)) + geom_violin() + labs(x="Cylinders", y="City MPG")
+ctycyl
+```
+
+```{r}
+ctydrv = mpg |> ggplot(aes(x = factor(drv), y=cty)) + geom_violin() + labs(x="Drive Wheels",y="City MPG")
+ctydrv
+```

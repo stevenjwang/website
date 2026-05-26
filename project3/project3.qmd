@@ -1,0 +1,141 @@
+---
+title:  "2024-25 NBA Salary Data"
+format:
+  closeread-html:
+    cr-style:
+      section-background-color: "white"
+      narrative-background-color-sidebar: "#1D428A"
+      narrative-text-color-sidebar: white
+      embed-resources: true
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(plotly)
+library(knitr)
+options(scipen=999)
+```
+```{r, include=FALSE}
+nba = read_csv("nba2025-clean.csv")
+```
+
+:::: {.cr-section}
+
+![](https://cdn.nba.com/logos/leagues/logo-nba.svg){width=50%}
+
+Salary Distribution and Statistics @cr-summary
+
+::: {#cr-summary}
+```{r}
+ggplotly(ggplot(data=nba, aes(x=salary)) + geom_histogram(bins=50) + labs(x="Salary", y="Count"))
+kable(summarize(nba, Min = min(salary),
+    Q1 = quantile(salary, 0.25),
+    Median = median(salary),
+    Mean = mean(salary),
+    Q3 = quantile(salary, 0.75),
+    Max = max(salary)))
+```
+:::
+
+10 Highest Salaries @cr-t10
+
+Among star players, we see multiple contracts paying $49.2M in 2024-25 as a result of the salary cap and the max contract value being limited to 35% of the cap for players with 10+ years of experience. @cr-t10g
+
+look at curry man so inspirational @cr-steph
+
+::: {#cr-t10}
+```{r}
+t10 = nba |> select("player","team","position","salary") |> arrange(desc(salary)) |> slice_head(n=10)
+plot = ggplot(data=t10, aes(x=player,y=salary)) + geom_col() + coord_cartesian(ylim=c(45000000,60000000)) + theme(axis.text.x = element_text(angle = 315)) + labs(x="Player",y="Salary")
+ggplotly(plot)
+kable(t10)
+```
+:::
+
+::: {#cr-t10g}
+```{r}
+plot2 = ggplot(data=t10, aes(x=player,y=salary,fill=salary<50000000)) + geom_col() + coord_cartesian(ylim=c(45000000,60000000)) + theme(axis.text.x = element_text(angle = 315),legend.position="none") + labs(x="Player",y="Salary") + scale_fill_manual(values = c("TRUE"="green"))
+ggplotly(plot2)
+kable(t10)
+```
+:::
+
+::: {#cr-steph}
+```{r}
+plot5 = ggplot(data=t10, aes(x=player,y=salary,fill=salary>55000000)) + geom_col() + coord_cartesian(ylim=c(45000000,60000000)) + theme(axis.text.x = element_text(angle = 315),legend.position="none") + labs(x="Player",y="Salary") + scale_fill_manual(values = c("TRUE"="#1D428A"))
+ggplotly(plot5) |> plotly::layout(autosize=TRUE) |> plotly::config(responsive=TRUE)
+kable(t10)
+```
+:::
+
+10 Highest Team Payrolls @cr-payroll
+
+Bradley Beal is singlehandedly responsible for the Suns payroll. Book and KD have always earned their share; Beal pulled off one of the greatest contract heists of the decade. @cr-beal
+
+:::{#cr-payroll}
+```{r}
+tpayroll = nba |> group_by(team) |> summarize(payroll=sum(salary)) |> arrange(desc(payroll)) |> slice_head(n=10)
+plot3 = ggplot(data=tpayroll, aes(x=team,y=payroll)) + geom_col() + coord_cartesian(ylim=c(150000000,250000000)) + labs(x="Team",y="Payrooll")
+ggplotly(plot3)
+```
+:::
+
+:::{#cr-beal}
+```{r}
+plot4 = ggplot(data=tpayroll, aes(x=team,y=payroll,fill=payroll>200000000)) + geom_col() + coord_cartesian(ylim=c(150000000,250000000)) + theme(legend.position="none") + labs(x="Team",y="Payroll") + scale_fill_manual(values = c("TRUE"="#E56020"))
+ggplotly(plot4)
+```
+:::
+
+Salary vs Experience @cr-xp
+
+We see a clear salary limit in the first four years of careers. First-round picks are limited to fixed-scale 4-year rookie contracts, while later picks are typically only offered contracts at or near the minimum. @cr-rookie
+
+These restrictions are substantially lifted after the rookie contract expires, or from the 4th year onward, in the case of rookie-scale extensions. @cr-xp
+
+:::{#cr-xp}
+
+```{r}
+ggplotly(ggplot(nba, aes(x=experience, y=salary)) + geom_point(alpha=0.3) + labs(x="Experience", y="Salary"))
+```
+
+:::
+
+:::{#cr-rookie}
+
+```{r}
+ggplotly(ggplot(nba, aes(x=experience, y=salary)) + geom_point(alpha=0.3) + annotate("segment",x = 0, xend = 3, y = 16000000, yend = 16000000, color="red") + labs(x="Experience", y="Salary"))
+```
+
+:::
+
+Salary Market by Position @cr-pos
+
+Teams tend to value great point guards more than great players in other positions, like steph. @cr-pg
+
+Look at bron at the top of the sf market. @cr-sf
+
+:::{#cr-pos}
+
+```{r}
+ggplotly(ggplot(nba, aes(x=position, y=salary)) + geom_violin() + labs(x="Position", y="Salary"))
+```
+:::
+
+:::{#cr-pg}
+
+```{r}
+ggplotly(ggplot(nba, aes(x=position, y=salary, fill=position=="PG")) + geom_violin() + labs(x="Position", y="Salary") + scale_fill_manual(values = c("TRUE" = "#1D428A", "FALSE" = "white")) + theme(legend.position="none"))
+```
+:::
+
+:::{#cr-sf}
+
+```{r}
+ggplotly(ggplot(nba, aes(x=position, y=salary, fill=position=="SF")) + geom_violin() + labs(x="Position", y="Salary") + scale_fill_manual(values = c("TRUE" = "#860038", "FALSE" = "white")) + theme(legend.position="none"))
+```
+:::
+
+go dubs @cr-pos
+
+::::
